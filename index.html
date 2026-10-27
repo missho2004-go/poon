@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科學頌缽聲音浴 | 身心深度放鬆療癒</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#F59E0B',
+                            amber: '#D97706',
+                            emerald: '#10B981',
+                            teal: '#0D9488',
+                            rose: '#F43F5E',
+                            purple: '#8B5CF6',
+                            sky: '#0284C7',
+                            violet: '#7C3AED'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Microsoft JhengHei', 'PingFang TC', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 響應式與細節樣式微調 */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 0.4; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        /* 繪製向量頌缽圖形 */
+        .singing-bowl-svg {
+            filter: drop-shadow(0px 10px 15px rgba(245, 158, 11, 0.3));
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 via-teal-50 to-purple-50 text-slate-800 font-sans min-h-screen pb-24">
+
+    <!-- 頂部導覽列 -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-amber-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-400 to-yellow-300 flex items-center justify-center text-white shadow-md">
+                    <i data-lucide="bell-ring" class="w-6 h-6 text-amber-900"></i>
+                </div>
+                <span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-amber-600 via-teal-600 to-purple-600">
+                    科學頌缽聲音浴
+                </span>
+            </div>
+            <a href="#booking" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold py-2 px-5 rounded-full shadow-lg shadow-teal-500/30 transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2 text-sm">
+                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                立即預約體驗
+            </a>
+        </div>
+    </header>
+
+    <!-- Banner 英雄區塊 (Hero Section) -->
+    <section class="relative overflow-hidden py-12 lg:py-20 px-4">
+        <!-- 裝飾性幾何色彩背景區 -->
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-300/30 via-rose-300/20 to-purple-400/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <!-- 頌缽標誌性 SVG 向量插圖 -->
+            <div class="w-32 h-32 mx-auto mb-6 relative flex items-center justify-center">
+                <div class="absolute inset-0 rounded-full bg-amber-400/20 animate-pulse-ring"></div>
+                <div class="w-28 h-28 rounded-full bg-gradient-to-br from-yellow-300 via-amber-400 to-amber-600 p-1 shadow-xl animate-float flex items-center justify-center">
+                    <svg class="w-20 h-20 text-white singing-bowl-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- 頌缽碗體 -->
+                        <path d="M15 45 C15 75, 85 75, 85 45 Z" fill="url(#bowlGrad)" stroke="white" stroke-width="2"/>
+                        <ellipse cx="50" cy="45" rx="35" ry="8" fill="#FBBF24" stroke="white" stroke-width="2"/>
+                        <!-- 音波氣場線 -->
+                        <path d="M10 35 Q 5 25, 20 15" stroke="#F59E0B" stroke-width="3" class="animate-pulse" />
+                        <path d="M90 35 Q 95 25, 80 15" stroke="#F59E0B" stroke-width="3" class="animate-pulse" />
+                        <path d="M50 20 Q 50 5, 50 2" stroke="#10B981" stroke-width="3" />
+                        <defs>
+                            <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#F59E0B" />
+                                <stop offset="100%" stop-color="#B45309" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- 主標題與副標題 -->
+            <span class="inline-block px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 text-xs sm:text-sm font-semibold tracking-wide mb-4 shadow-inner border border-amber-200">
+                ✨ 身心靈神經系統深層修復
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                科學頌缽聲音浴
+            </h1>
+            <p class="text-lg sm:text-2xl font-medium text-slate-700 max-w-3xl mx-auto leading-relaxed mb-8">
+                靜躺聆聽頌缽，讓身心同神經系統，<br class="hidden sm:inline">
+                進入<span class="text-emerald-600 font-bold underline decoration-amber-400 decoration-wavy">全然放鬆</span>的休息模式。
+            </p>
+
+            <!-- 核心概念卡片 (什麼是科學頌缽療癒) -->
+            <div class="mt-8 bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-amber-200 max-w-4xl mx-auto text-left relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-teal-200/50 to-transparent rounded-bl-full pointer-events-none"></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gradient-to-tr from-sky-400 to-blue-600 text-white rounded-2xl shadow-md">
+                        <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-sky-600 tracking-wider uppercase">Neurology & Sound</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-800">甚麼是科學頌缽療癒？</h2>
+                    </div>
+                    <span class="ml-auto bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow animate-bounce">
+                        經研究支持
+                    </span>
+                </div>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    傳統頌缽的現代註釋與系統化研究，是一種結合<span class="font-semibold text-slate-800">現代神經科學</span>、<span class="font-semibold text-slate-800">生理學</span>與<span class="font-semibold text-slate-800">心理學</span>的輔助療癒方法。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICON 分類：四大健康效益 (Key Health Benefits) -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 flex items-center justify-center gap-2">
+                <i data-lucide="heart-pulse" class="w-8 h-8 text-rose-500"></i>
+                核心健康效益分類
+            </h2>
+            <p class="text-slate-500 text-sm mt-2">針對現代人常見的身心緊張與睡眠困擾，提供精準療癒調整</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- 卡片 1: 肩頸背鬆弛 -->
+            <div class="bg-gradient-to-b from-rose-50 to-white p-6 rounded-3xl border-2 border-rose-200 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-400 text-white flex items-center justify-center mb-5 shadow-lg shadow-rose-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="activity" class="w-8 h-8"></i>
+                </div>
+                <span class="text-xs font-bold text-rose-600 bg-rose-100 px-2.5 py-1 rounded-full">部位釋壓</span>
+                <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">鬆開肩頭背部</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    療程更加精準對位，透過聲音振動波深入深層肌肉，舒緩長時間積累的肩頸緊張與僵硬酸痛。
+                </p>
+            </div>
+
+            <!-- 卡片 2: 睡眠修復 -->
+            <div class="bg-gradient-to-b from-indigo-50 to-white p-6 rounded-3xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 text-white flex items-center justify-center mb-5 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="moon" class="w-8 h-8"></i>
+                </div>
+                <span class="text-xs font-bold text-indigo-600 bg-indigo-100 px-2.5 py-1 rounded-full">深度休息</span>
+                <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">睡眠修復‧氣色光澤</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    引導腦波進入深度休眠狀態，改善失眠與睡眠質素欠佳問題，讓身體代謝恢復，肌膚更顯自然光澤。
+                </p>
+            </div>
+
+            <!-- 卡片 3: 腦同心放鬆 -->
+            <div class="bg-gradient-to-b from-teal-50 to-white p-6 rounded-3xl border-2 border-teal-200 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center mb-5 shadow-lg shadow-teal-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sparkles" class="w-8 h-8"></i>
+                </div>
+                <span class="text-xs font-bold text-teal-600 bg-teal-100 px-2.5 py-1 rounded-full">神經和諧</span>
+                <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">腦同心深度放鬆</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    調節自主神經系統，讓忙碌大腦放慢腳步，協調大腦與心率節奏，達致深層平靜與情緒緩和。
+                </p>
+            </div>
+
+            <!-- 卡片 4: 靈氣補充 -->
+            <div class="bg-gradient-to-b from-amber-50 to-white p-6 rounded-3xl border-2 border-amber-200 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 text-white flex items-center justify-center mb-5 shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sun" class="w-8 h-8"></i>
+                </div>
+                <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-1 rounded-full">能量滋養</span>
+                <h3 class="text-xl font-bold text-slate-800 mt-2 mb-2">臼井靈氣能量補充</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    部分療程視乎需要加入臼井靈氣，溫柔調整能量與情緒平衡，配合頌缽聲音，令身心更安定穩固。
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 療癒方案優惠 (Packages Section) -->
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 flex items-center justify-center gap-2">
+                <i data-lucide="sparkle" class="w-8 h-8 text-amber-500"></i>
+                療癒方案與體驗優惠
+            </h2>
+            <p class="text-slate-500 text-sm mt-2">首次體驗享獨家優惠折扣，歡迎個人深層放鬆或好友同行</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- 方案 1: 個人完整療癒 -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-300 relative flex flex-col justify-between hover:border-amber-500 transition-all">
+                <div class="absolute -top-4 right-6 bg-gradient-to-r from-amber-500 to-yellow-500 text-white font-bold text-xs px-4 py-1.5 rounded-full shadow-md">
+                    熱門個人首選
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
+                            <i data-lucide="user" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600">60分鐘完整專屬療程</span>
+                            <h3 class="text-2xl font-bold text-slate-800">個人完整療癒</h3>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 my-6 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>全程舒適躺臥，<strong>無需更衣</strong>，自在完全放鬆</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>特別適合：<strong>失眠、睡眠質素欠佳、痛症、週期不適</strong>之人士</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>針對個人身心狀況進行專屬聲音振動調理</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="border-t border-slate-100 pt-6 mt-4">
+                    <div class="flex items-baseline gap-3 mb-4">
+                        <span class="text-xs text-slate-400">首次體驗價</span>
+                        <span class="text-4xl font-extrabold text-amber-600">$880</span>
+                        <span class="text-sm text-slate-400 line-through">原價 $1380</span>
+                    </div>
+                    <a href="#booking" class="w-full block text-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3 rounded-2xl shadow-lg shadow-amber-500/20 transition-all">
+                        預約個人體驗
+                    </a>
+                </div>
+            </div>
+
+            <!-- 方案 2: 三人同行純聲音療癒 -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl border-2 border-teal-300 relative flex flex-col justify-between hover:border-teal-500 transition-all">
+                <div class="absolute -top-4 right-6 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-bold text-xs px-4 py-1.5 rounded-full shadow-md">
+                    超值三人共享
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center font-bold">
+                            <i data-lucide="users" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-teal-600">全程60分鐘聲音浴</span>
+                            <h3 class="text-2xl font-bold text-slate-800">三人同行純聲音療癒</h3>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 my-6 text-slate-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>一班朋友躺著聽頌缽，共享深度放鬆與靜心時刻</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>一同遠離都市喧囂，釋放工作壓力，同步減壓充電</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                            <span>純粹聲音療癒共鳴，適合親友團體輕鬆體驗</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="border-t border-slate-100 pt-6 mt-4">
+                    <div class="flex items-baseline gap-3 mb-4">
+                        <span class="text-xs text-slate-400">三人同行體驗總價</span>
+                        <span class="text-4xl font-extrabold text-teal-600">$1180</span>
+                        <span class="text-sm text-slate-400 line-through">原價 $2040</span>
+                    </div>
+                    <a href="#booking" class="w-full block text-center bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-600 hover:to-emerald-700 text-white font-bold py-3 rounded-2xl shadow-lg shadow-teal-500/20 transition-all">
+                        預約三人同行
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 導師資歷區塊 (Instructor Profile - 純向量 Icon 設計，無相片) -->
+    <section class="max-w-5xl mx-auto px-4 py-10">
+        <div class="bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+            <!-- 背景光斑 -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- 導師 Icon 勳章標誌 -->
+                <div class="text-center md:text-left flex flex-col items-center md:items-start">
+                    <div class="w-24 h-24 rounded-3xl bg-gradient-to-tr from-amber-400 to-purple-400 p-1 shadow-lg mb-4 flex items-center justify-center">
+                        <div class="w-full h-full bg-slate-900 rounded-[22px] flex items-center justify-center">
+                            <i data-lucide="award" class="w-12 h-12 text-amber-400"></i>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl font-extrabold tracking-wide">K.L. POON</h2>
+                    <p class="text-amber-400 font-medium text-sm mt-1">專業聲音療癒師及導師</p>
+                </div>
+
+                <!-- 資歷清單 (ICON 列表) -->
+                <div class="md:col-span-2">
+                    <h3 class="text-lg font-bold text-purple-200 border-b border-purple-800/80 pb-3 mb-4 flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-teal-400"></i>
+                        導師及專業認證資歷
+                    </h3>
+                    <ul class="space-y-3 text-sm sm:text-base text-slate-200">
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                            <span><strong>K.L.POON</strong> 科學頌缽療癒師</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                            <span>臼井靈氣療癒師及導師</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                            <span><strong>CERTIFIED HIMALAYA SINGING BOWL THERAPIST</strong> (喜馬拉雅中心認證頌缽療癒師)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                            <span><strong>IAOTH</strong> 國際認證頌缽療癒師</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                            <span><strong>ICRT</strong> 國際靈氣協會專業會員</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 溫馨提示 / 注意事項 (Important Notices - 向量 ICON 圖示) -->
+    <section class="max-w-5xl mx-auto px-4 py-8">
+        <div class="bg-amber-50/80 rounded-3xl p-6 sm:p-8 border-2 border-amber-200">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2.5 bg-amber-500 text-white rounded-xl shadow">
+                    <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">溫馨提示與注意事項</h3>
+                    <p class="text-xs text-amber-800">為確保最佳體驗與安全，請留意以下身體狀況</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                <!-- 注意項目 1 -->
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center gap-3 shadow-sm">
+                    <div class="p-2.5 bg-rose-100 text-rose-600 rounded-xl shrink-0">
+                        <i data-lucide="heart-off" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-slate-700">心臟病患者</span>
+                </div>
+
+                <!-- 注意項目 2 -->
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center gap-3 shadow-sm">
+                    <div class="p-2.5 bg-slate-100 text-slate-600 rounded-xl shrink-0">
+                        <i data-lucide="magnet" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-slate-700">對應部位有金屬物<br><span class="text-xs text-slate-400 font-normal">(包括體外金屬) 之人士</span></span>
+                </div>
+
+                <!-- 注意項目 3 -->
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center gap-3 shadow-sm">
+                    <div class="p-2.5 bg-amber-100 text-amber-700 rounded-xl shrink-0">
+                        <i data-lucide="bandaid" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-slate-700">對應部位近三個月<br><span class="text-xs text-slate-400 font-normal">做過創口/創傷手術之人士</span></span>
+                </div>
+
+                <!-- 注意項目 4 -->
+                <div class="bg-white p-4 rounded-2xl border border-amber-200 flex items-center gap-3 shadow-sm">
+                    <div class="p-2.5 bg-purple-100 text-purple-600 rounded-xl shrink-0">
+                        <i data-lucide="baby" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-slate-700">懷孕婦女</span>
+                </div>
+            </div>
+
+            <div class="bg-emerald-100/70 border border-emerald-300 text-emerald-800 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium flex items-center gap-2">
+                <i data-lucide="info" class="w-4 h-4 shrink-0 text-emerald-600"></i>
+                <span>註：<strong>純聲音療癒不影響</strong>以上對象，歡迎查詢詳情。</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 預約與諮詢 CTA (Booking Section) -->
+    <section id="booking" class="max-w-4xl mx-auto px-4 py-12 text-center">
+        <div class="bg-gradient-to-br from-emerald-500 via-teal-600 to-cyan-700 text-white p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">開啟您的身心療癒之旅</h2>
+                <p class="text-emerald-100 text-base sm:text-lg max-w-xl mx-auto mb-8">
+                    如欲查詢最新檔期或預約體驗，請隨時向前台職員查詢或透過聯絡我們。
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <!-- WhatsApp 連結 -->
+                    <a href="https://wa.me/" target="_blank" class="w-full sm:w-auto bg-emerald-400 hover:bg-emerald-300 text-slate-900 font-bold px-8 py-4 rounded-full shadow-lg flex items-center justify-center gap-3 transition-all transform hover:scale-105">
+                        <i data-lucide="message-circle" class="w-6 h-6 fill-slate-900"></i>
+                        WhatsApp 查詢與預約
+                    </a>
+                    <!-- Instagram 連結 -->
+                    <a href="https://instagram.com" target="_blank" class="w-full sm:w-auto bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-4 rounded-full border border-white/40 shadow-lg flex items-center justify-center gap-3 transition-all transform hover:scale-105">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                        Instagram DM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾與聲明 (Footer) -->
+    <footer class="max-w-5xl mx-auto px-4 pt-6 pb-12 text-center text-slate-500 text-xs leading-relaxed border-t border-slate-200">
+        <p class="mb-2">
+            <strong>聲明：</strong>科學頌缽及靈氣療癒屬輔助性身心服務，不能代替任何醫療或專業診斷。
+        </p>
+        <p>© 2026 科學頌缽聲音浴 版權所有</p>
+    </footer>
+
+    <!-- 初始化 Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
